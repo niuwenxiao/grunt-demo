@@ -7,10 +7,9 @@
     }
   });
   grunt.loadNpmTasks('grunt-contrib-less');
-  grunt.registerTask('default',['less'])
-
-};*/
-
+  grunt.registerTask('default',['less']);
+};
+*/
 
   module.exports = function(grunt) {
     grunt.initConfig({
