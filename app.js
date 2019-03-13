@@ -5,10 +5,11 @@ const http = require('http'),
        qs   = require('querystring');
 
 http.createServer((req, res) => {
-    console.log(`${req.method} ${req.url} HTTP/${req.httpVersion}`);
-    console.log(req.headers);
+  
+    console.log(`${req.method} ${req.url} HTTP/${req.httpVersion}`);//打印起始行
+    console.log(req.headers);//打印请求头
     console.log();
-
+ 
     var addr = url.parse(req.url);
     var rect = qs.parse(addr.query);
 
